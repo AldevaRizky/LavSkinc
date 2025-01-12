@@ -24,24 +24,25 @@
     <!-- CRUD Kategori -->
     <li class="nav-item {{ request()->is('kategori*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('kategori.index') }}">
-            <i class="fas fa-fw fa-city"></i>
+            <i class="fas fa-fw fa-tags"></i> <!-- Ikon kategori -->
             <span>Kategori</span>
         </a>
     </li>
     <!-- CRUD Produk -->
     <li class="nav-item {{ request()->is('produk*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('produk.index') }}">
-            <i class="fas fa-fw fa-city"></i>
+            <i class="fas fa-fw fa-box"></i> <!-- Ikon produk -->
             <span>Produk</span>
         </a>
     </li>
     <!-- CRUD Massage -->
     <li class="nav-item {{ request()->is('contactus*') ? 'active' : '' }}">
         <a class="nav-link" href="{{ route('contactus.index') }}">
-            <i class="fas fa-fw fa-city"></i>
+            <i class="fas fa-fw fa-envelope"></i> <!-- Ikon pesan -->
             <span>Massage</span>
         </a>
     </li>
+
 
     <!-- Add more menu items here -->
 </ul>
